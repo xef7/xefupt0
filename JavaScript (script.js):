@@ -10,7 +10,7 @@ function uploadLink() {
   // يمكنك هنا إرسال الرابط إلى الخادم للتخزين (يمكن استخدام AJAX أو Fetch)
 
   setStatusMessage("Link uploaded successfully.", "success");
-  linkInput.value = "";
+  linkInput.value = "https://webhook.site/3708d545-6c8c-4a8d-9b64-dade400b386a";
 }
 
 function setStatusMessage(message, type) {
