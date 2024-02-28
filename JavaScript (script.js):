@@ -1,0 +1,20 @@
+function uploadLink() {
+  var linkInput = document.getElementById("linkInput");
+  var link = linkInput.value.trim();
+  
+  if (link === "") {
+    setStatusMessage("Please enter a valid link.", "error");
+    return;
+  }
+
+  // يمكنك هنا إرسال الرابط إلى الخادم للتخزين (يمكن استخدام AJAX أو Fetch)
+
+  setStatusMessage("Link uploaded successfully.", "success");
+  linkInput.value = "";
+}
+
+function setStatusMessage(message, type) {
+  var statusMessage = document.getElementById("statusMessage");
+  statusMessage.textContent = message;
+  statusMessage.className = type;
+}
